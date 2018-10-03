@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    final let url = URL(string: "https://itunes.apple.com/search?term=Puzzle&limit=200&entity=software")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        fetchData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func fetchData() {
+        guard let apiUrl = url else { return }
+        URLSession.shared.dataTask(with: apiUrl) { (data, response, error) in
+            print("Retrieved apps list")
+        }.resume()
     }
-
 
 }
 
