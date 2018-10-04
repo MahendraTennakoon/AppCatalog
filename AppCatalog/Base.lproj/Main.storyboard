@@ -78,6 +78,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="QIp-tu-QLx" id="fq9-Hm-sYh"/>
                         <outlet property="tableView" destination="kOI-3F-SnV" id="Y0F-z1-na5"/>
                     </connections>
                 </viewController>
