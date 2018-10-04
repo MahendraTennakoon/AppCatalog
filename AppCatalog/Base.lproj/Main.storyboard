@@ -91,7 +91,7 @@
         <scene sceneID="CW3-Bz-6OS">
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="CHH-yY-PU3" customClass="ModalViewController" customModule="AppCatalog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Sar-ao-lXn">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Sar-ao-lXn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -139,10 +139,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-7O-Ggu">
-                                        <rect key="frame" x="242" y="267" width="34" height="21"/>
+                                        <rect key="frame" x="212" y="267" width="64" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB1-I3-iCW">
@@ -152,12 +152,24 @@
                                         <color key="textColor" red="0.3203125" green="0.3203125" blue="0.3203125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q0-bN-pxe">
+                                        <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCloseClicked:" destination="CHH-yY-PU3" eventType="touchUpInside" id="gca-1z-YVO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="6Q0-bN-pxe" firstAttribute="top" secondItem="VVC-kV-BLw" secondAttribute="top" constant="8" id="4Pd-iE-3mQ"/>
                                     <constraint firstItem="UG7-cc-9wP" firstAttribute="leading" secondItem="VVC-kV-BLw" secondAttribute="leading" constant="8" id="KfA-9f-50a"/>
                                     <constraint firstItem="UG7-cc-9wP" firstAttribute="top" secondItem="EcY-Fc-dj3" secondAttribute="bottom" constant="10" id="SKo-2m-87G"/>
                                     <constraint firstAttribute="width" constant="292" id="Vay-qm-OKQ"/>
+                                    <constraint firstItem="6Q0-bN-pxe" firstAttribute="leading" secondItem="VVC-kV-BLw" secondAttribute="leading" constant="8" id="WH4-eI-2Lp"/>
                                     <constraint firstAttribute="height" constant="296" id="Zif-3c-NP5"/>
                                     <constraint firstItem="7h3-W3-spZ" firstAttribute="centerX" secondItem="VVC-kV-BLw" secondAttribute="centerX" id="fgD-4v-rhF"/>
                                     <constraint firstItem="EcY-Fc-dj3" firstAttribute="leading" secondItem="VVC-kV-BLw" secondAttribute="leading" constant="8" id="ifv-7B-Goa"/>

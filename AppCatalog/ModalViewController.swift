@@ -21,6 +21,13 @@ class ModalViewController: UIViewController {
     var selectedApp: AppModel = AppModel()
     
     @IBOutlet weak var lblPrice: UILabel!
+    
+    
+    @IBAction func btnCloseClicked(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lblAppName.text = self.selectedApp.trackName
