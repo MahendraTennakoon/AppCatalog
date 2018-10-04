@@ -62,6 +62,8 @@
                                                 <constraint firstItem="ANf-UO-qvk" firstAttribute="top" secondItem="KQF-VE-vYt" secondAttribute="top" constant="8" id="cge-fD-CDz"/>
                                                 <constraint firstItem="HcO-Fq-Cd3" firstAttribute="leading" secondItem="90C-ii-hFV" secondAttribute="trailing" constant="15" id="coK-vO-qpy"/>
                                                 <constraint firstAttribute="bottom" secondItem="HcO-Fq-Cd3" secondAttribute="bottom" constant="0.80000000000000004" id="dKB-nH-9BZ"/>
+                                                <constraint firstItem="HcO-Fq-Cd3" firstAttribute="height" secondItem="ANf-UO-qvk" secondAttribute="height" id="mK9-3E-qbL"/>
+                                                <constraint firstItem="HcO-Fq-Cd3" firstAttribute="top" secondItem="ANf-UO-qvk" secondAttribute="bottom" constant="-7" id="mMP-aW-ydS"/>
                                                 <constraint firstItem="90C-ii-hFV" firstAttribute="leading" secondItem="KQF-VE-vYt" secondAttribute="leading" id="mVA-fZ-MAC"/>
                                                 <constraint firstAttribute="bottom" secondItem="90C-ii-hFV" secondAttribute="bottom" id="mqU-Jh-Jzf"/>
                                             </constraints>
@@ -73,6 +75,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8e6-yL-396"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,6 +89,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="kOI-3F-SnV" id="Y0F-z1-na5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
