@@ -20,6 +20,7 @@ class ModalViewController: UIViewController {
     @IBOutlet weak var lblGenre: UILabel!
     var selectedApp: AppModel = AppModel()
     
+    @IBOutlet weak var lblPrice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lblAppName.text = self.selectedApp.trackName
@@ -39,6 +40,7 @@ class ModalViewController: UIViewController {
         self.lblCompany.text = self.selectedApp.sellerName
         self.lblType.text = "Type: " + self.selectedApp.wrapperType
         self.lblGenre.text = self.selectedApp.primaryGenreName
+        self.lblPrice.text = self.selectedApp.formattedPrice
     }
 
     override func didReceiveMemoryWarning() {

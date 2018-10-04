@@ -164,6 +164,7 @@
                         <outlet property="lblAppName" destination="EcY-Fc-dj3" id="47M-Wd-Xqs"/>
                         <outlet property="lblCompany" destination="UG7-cc-9wP" id="bAW-BJ-59b"/>
                         <outlet property="lblGenre" destination="7WZ-lq-nR5" id="frl-c8-Bld"/>
+                        <outlet property="lblPrice" destination="nzv-7O-Ggu" id="aZX-cX-SYd"/>
                         <outlet property="lblType" destination="dEw-Fz-agX" id="sys-dS-WHY"/>
                     </connections>
                 </viewController>

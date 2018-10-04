@@ -24,7 +24,7 @@ class AppModel: Codable {
 //    let appImage: UIImage?
     let wrapperType: String
     let primaryGenreName: String
-//    let formattedPrice: String
+    let formattedPrice: String?
     
     init(trackName: String, sellerName: String,artworkUrl60: String, wrapperType: String, primaryGenreName: String, formattedPrice: String){
         self.trackName = trackName
@@ -32,7 +32,7 @@ class AppModel: Codable {
         self.artworkUrl60 = artworkUrl60
         self.wrapperType = wrapperType
         self.primaryGenreName = primaryGenreName
-//        self.formattedPrice = formattedPrice
+        self.formattedPrice = formattedPrice
     }
     
     init () {
@@ -41,6 +41,7 @@ class AppModel: Codable {
         self.artworkUrl60 = ""
         self.wrapperType = ""
         self.primaryGenreName = ""
+        self.formattedPrice = ""
     }
 
 }
