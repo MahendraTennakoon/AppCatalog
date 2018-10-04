@@ -10,12 +10,35 @@ import UIKit
 
 class ModalViewController: UIViewController {
     
+    
+    
     var appName: String = ""
     @IBOutlet weak var lblAppName: UILabel!
+    @IBOutlet weak var imgPopupApp: UIImageView!
+    @IBOutlet weak var lblCompany: UILabel!
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var lblGenre: UILabel!
+    var selectedApp: AppModel = AppModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.lblAppName.text = appName
+        self.lblAppName.text = self.selectedApp.trackName
+        
+        if let artworkUrl = URL(string: self.selectedApp.artworkUrl60) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: artworkUrl)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.imgPopupApp.image = image
+                    }
+                }
+            }
+        }
+        
+        self.lblCompany.text = self.selectedApp.sellerName
+        self.lblType.text = "Type: " + self.selectedApp.wrapperType
+        self.lblGenre.text = self.selectedApp.primaryGenreName
     }
 
     override func didReceiveMemoryWarning() {

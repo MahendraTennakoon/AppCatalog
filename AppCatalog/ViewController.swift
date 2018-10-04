@@ -44,6 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         let modalViewContoller = segue.destination as! ModalViewController
         
         modalViewContoller.appName = selectedApp.trackName
+        modalViewContoller.selectedApp = selectedApp
     }
     
     
