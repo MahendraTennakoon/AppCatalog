@@ -34,5 +34,13 @@ class AppModel: Codable {
         self.primaryGenreName = primaryGenreName
 //        self.formattedPrice = formattedPrice
     }
+    
+    init () {
+        self.trackName = ""
+        self.sellerName = ""
+        self.artworkUrl60 = ""
+        self.wrapperType = ""
+        self.primaryGenreName = ""
+    }
 
 }

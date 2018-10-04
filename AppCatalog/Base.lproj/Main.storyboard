@@ -80,11 +80,46 @@
                     <connections>
                         <outlet property="searchBar" destination="QIp-tu-QLx" id="fq9-Hm-sYh"/>
                         <outlet property="tableView" destination="kOI-3F-SnV" id="Y0F-z1-na5"/>
+                        <segue destination="CHH-yY-PU3" kind="presentation" identifier="appDescriptionModal" id="Lek-Mt-7Ae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="87.706146926536732"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="CW3-Bz-6OS">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="CHH-yY-PU3" customClass="ModalViewController" customModule="AppCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sar-ao-lXn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-kV-BLw">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-Fc-dj3">
+                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="CTw-Lw-mex"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAppName" destination="EcY-Fc-dj3" id="47M-Wd-Xqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2q-HA-08f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="95"/>
         </scene>
     </scenes>
 </document>

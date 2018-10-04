@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     var url = URL(string: "https://itunes.apple.com/search?term=Puzzle&limit=200&entity=software")
     private var apps = [AppModel]()
     @IBOutlet weak var searchBar: UISearchBar!
+    var selectedApp: AppModel = AppModel()
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +32,18 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        print(apps[indexPath.row].trackName)
+        selectedApp = apps[indexPath.row]
+
+        self.performSegue(withIdentifier: "appDescriptionModal", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // get a reference to the second view controller
+        let modalViewContoller = segue.destination as! ModalViewController
+        
+        modalViewContoller.appName = selectedApp.trackName
     }
     
     
