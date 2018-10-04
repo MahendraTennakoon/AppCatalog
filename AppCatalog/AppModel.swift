@@ -20,16 +20,16 @@ class AppModel: Codable {
 
     let trackName: String
     let sellerName: String
-    let artworkUrl512: String
+    let artworkUrl60: String
 //    let appImage: UIImage?
     let wrapperType: String
     let primaryGenreName: String
 //    let formattedPrice: String
     
-    init(trackName: String, sellerName: String,artworkUrl512: String, wrapperType: String, primaryGenreName: String, formattedPrice: String){
+    init(trackName: String, sellerName: String,artworkUrl60: String, wrapperType: String, primaryGenreName: String, formattedPrice: String){
         self.trackName = trackName
         self.sellerName = sellerName
-        self.artworkUrl512 = artworkUrl512
+        self.artworkUrl60 = artworkUrl60
         self.wrapperType = wrapperType
         self.primaryGenreName = primaryGenreName
 //        self.formattedPrice = formattedPrice

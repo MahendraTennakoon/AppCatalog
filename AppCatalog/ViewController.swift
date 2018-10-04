@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.lblName.text = apps[indexPath.row].trackName
         cell.lblCreator.text = apps[indexPath.row].sellerName
         
-        if let artworkUrl = URL(string: apps[indexPath.row].artworkUrl512) {
+        if let artworkUrl = URL(string: apps[indexPath.row].artworkUrl60) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: artworkUrl)
                 if let data = data {
