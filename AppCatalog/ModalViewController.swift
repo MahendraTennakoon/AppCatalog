@@ -24,7 +24,7 @@ class ModalViewController: UIViewController {
     
     
     @IBAction func btnCloseClicked(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     
