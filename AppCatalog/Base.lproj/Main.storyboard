@@ -40,8 +40,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="mE2-TG-1El"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-UO-qvk">
@@ -49,12 +49,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ihe-vD-YfJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="HcO-Fq-Cd3" firstAttribute="top" secondItem="KQF-VE-vYt" secondAttribute="top" constant="25" id="7gI-Uz-QPp"/>
                                                 <constraint firstAttribute="trailing" secondItem="HcO-Fq-Cd3" secondAttribute="trailing" id="9Q2-lt-4j5"/>
                                                 <constraint firstItem="90C-ii-hFV" firstAttribute="top" secondItem="KQF-VE-vYt" secondAttribute="top" id="G5B-sw-3kS"/>
                                                 <constraint firstAttribute="trailing" secondItem="ANf-UO-qvk" secondAttribute="trailing" id="Y3t-ab-juO"/>

@@ -25,6 +25,18 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.lblName.text = apps[indexPath.row].trackName
         cell.lblCreator.text = apps[indexPath.row].sellerName
         
+        if let artworkUrl = URL(string: apps[indexPath.row].artworkUrl512) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: artworkUrl)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        cell.imgAppIcon.image = image
+                    }
+                }
+            }
+        }
+        
         return cell
     }
 
