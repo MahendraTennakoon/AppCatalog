@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var url = URL(string: "https://itunes.apple.com/search?term=Puzzle&limit=200&entity=software")
@@ -28,6 +28,10 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         fetchData()
         self.tableView.reloadData()
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
     }
     
     
@@ -56,6 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
+        tableView.delegate = self
         fetchData()
     }
     
